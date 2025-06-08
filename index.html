@@ -4,33 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Portofolio</title>
   </head>
   <body>
-    <nav id="navbar">
-      <ul id="component">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="techstack.html">TechStack</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
     <div class="main">
-      <div class="intro">
-        <div class="intro-text">
-          <b>Hello, I'm</b><br />
-          <b>Deepak</b><br />
-          <b style="color: rgb(0, 252, 59);">I'm a Software Developer</b>
+      <nav class="navbar">
+        <h2>PORTFOLIO</h2>
+        <div class="navbar-part">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="techstack.html">TechStack</a></div>
+          <div><a href="about.html">About</a></div>
+          <div><a href="contact.html">Contact</a></div>
+          <button class="signin-btn">Sign in</button>
+          <i class="ri-menu-line"></i>
         </div>
-      </div>
-      <div class="logo">
-        <div class="logo-i">
-          <img src="src/manOnTable.svg" alt="" height="30px" width="60px" class="logo-img">
+      </nav>
+      <div class="main-section">
+        <div class="intro">
+          <h2>Hello I'm <span>Deepak</span> I'm a
+          <span id="Web">Web Developer</span></h2>
+          <button class="contact-btn">Contact</button>
+          <div class="icon">
+            <i class="ri-github-fill"></i>
+            <i class="ri-linkedin-fill"></i>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="src/manOnTable.svg" alt="">
         </div>
       </div>
     </div>
-    <footer class="footer-conatiner">
-      <p>&copy; 2025 Deepak | All Right Reserved</p>
-    </footer>
   </body>
 </html>
