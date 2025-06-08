@@ -73,7 +73,7 @@ html,body{
     /* display: block; */
     font-size: 5.5vw;
 }
-.into button{
+.intro button{
     background-color: #8370ed;
 }
 .intro h2 #Web{
@@ -99,55 +99,70 @@ html,body{
     width: 90%;
     height: 100%;
 }
+.main-about{
+    height: 100%;
+    width: 100%;
+}
 .about{
     height: calc(100% - 60px);
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3vw;
-    padding: 5vw 0 0 2vw ;
+    padding: 6vw 5vw;
 }
 .about-img{
-    width: 60%;
+    width: 40%;
+    height: 100%;
 }
 .about-img img{
-    width: 100%;
+    width:  80%;
     height: 100%;
-    border-radius: 20%;
+    border-radius: 100%;
 }
-.about-inro{
-    width: 40%;
+.about-intro{
+    width: 50%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+.about-intro button{
+    padding: 1vw 2vw;
+    border: none;
+    background-color: #FA6400;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    color: white;                                              
 }
 
 .about-heading{
     /* text-align: center; */
-    font-size: 2.5vw;
+    font-size: 2.7vw;
     font-weight: bolder;
     margin-bottom: 0.7vw;
 }
 .content{
     font-size: 2vw;
+    font-weight: 400;
     font-style: oblique;
-    margin-bottom: 1vw;
+    margin-bottom: 0.8vw;
 }
 #about-fav-heading{
-    font-size: 1.5vw;
+    font-size: 2.7vw;
     font-weight: bold;
-    margin-bottom: 1vw;
+    margin-bottom: 0.8vw;
 }
 .tech-posts{
     font-style: oblique;
     font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 1em;
+    font-size: 2vw;
+    margin-bottom: 1vw;
 }
 .tech-post{
     display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid black;
-    margin-bottom: 0.5em;
-    border-radius: 10px;
+    padding: 0.5vw 1vw;
+    background-color: #8370ed;
+    /* border: 1px solid black; */
+    margin-bottom: 1vw;
+    border-radius: 1vw;
 }
 .tech-head{
     text-align: center;
@@ -282,10 +297,49 @@ footer{
     }
     .contact-btn{
         font-size: 6vw;
+        font-weight: 400;
         margin: 4vw 0;
     }
     .icon{
         font-size: 8vw;
     }
+    .about{
+        flex-direction: column;
+        gap: 3vw;
+        height: calc(100% - 50px);
+        width: 100%;
+        padding: 2vw 10vw;
+    }
 
+    .about-img{
+        width: 100%;
+        height: 40%;
+    }
+    .about-img img{
+        margin-left: 6vw;
+    }
+    .about-intro{
+        width: 100%;
+        height: 60%;
+    }
+    .about-heading{
+        font-size: 8vw;
+        text-align: center;
+    }
+    .content{
+        font-size: 5vw;
+    }
+    #about-fav-heading{
+        font-size: 8vw;
+    }
+    .tech-posts{
+        font-size: 6vw;
+        margin-bottom: 1vw;
+    }
+    .about-intro button{
+    padding: 2vw 4vw;
+   font-size: 5vw;  
+   margin-top: 2vw;
+   border-radius: 1vw;                                           
+    }
 }
