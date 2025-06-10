@@ -419,6 +419,7 @@ button:active {
         height: calc(100% - 50px);
         width: 100%;
         padding: 2vw 10vw;
+        margin-bottom: 15vw;
     }
 
     .about-img {
