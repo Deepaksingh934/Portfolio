@@ -398,13 +398,13 @@ button:active {
 
     .intro h2 {
         padding-right: 0vw;
-        font-size: 13vw;
+        font-size: 10vw;
     }
 
     .contact-btn {
         font-size: 6vw;
         font-weight: 400;
-        margin: 4vw 0;
+        /* margin: 4vw 0; */
     }
 
     .icon {
