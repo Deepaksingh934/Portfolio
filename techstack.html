@@ -13,15 +13,22 @@
   <div class="techstack">
     <nav class="navbar">
       <h2>PORTFOLIO</h2>
-      <div class="navbar-part">
+      <div class="navbar-links">
         <div><a href="index.html">Home</a></div>
         <div><a href="techstack.html">TechStack</a></div>
         <div><a href="about.html">About</a></div>
         <div><a href="contact.html">Contact</a></div>
         <button class="signin-btn">Sign in</button>
-        <i class="ri-menu-line"></i>
       </div>
+      <i class="ri-menu-line" id="menu-btn"></i>
     </nav>
+    <div id="mobile-menu">
+      <button class="close-btn" id="close-btn">&times;</button>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="techstack.html">TechStack</a>
+      <a href="contact.html">Contact</a>
+    </div>  
     <div class="techstack-container">
       <h1 class="tech-head">My Tech Stack</h1>
       <h2>Language</h2>
@@ -99,5 +106,6 @@
       </div>
     </div>
   </div>
+  <script src="logic.js"></script>
 </body>
 </html>

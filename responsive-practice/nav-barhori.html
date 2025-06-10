@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>navbar</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2>Logo</h2>
+            </div>
+            <div class="content">
+                <div><a href="#">Home</a></div>
+                <div><a href="#">About</a></div>
+                <div><a href="#">TechStack</a></div>
+                <div><a href="#">Contact</a></div>
+            </div>
+        </nav>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+  <style>
+    /* Global styles */
+
+
+    /* Header / Navbar */
+
+
+    /* Sidebar for mobile */
+    #mobile-menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: #111827;
+      color: white;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      transition: left 0.3s ease;
+      z-index: 1000;
+    }
+
+    #mobile-menu a {
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    #mobile-menu a:hover {
+      color: #d1d5db;
+    }
+
+    #mobile-menu .close-btn {
+      font-size: 2rem;
+      align-self: flex-end;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      #menu-btn {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MySite</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn">&#9776;</button>
+  </header>
+
+  <!-- Mobile Sidebar -->
+  <div id="mobile-menu">
+    <button class="close-btn" id="close-btn">&times;</button>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const closeBtn = document.getElementById("close-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.style.left = "0";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.style.left = "-100%";
+    });
+  </script>
+
+</body>
+</html>

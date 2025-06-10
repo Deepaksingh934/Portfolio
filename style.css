@@ -1,22 +1,58 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
     background-color: rgb(240, 237, 237);
 }
 
-.main{
+.main {
     height: 100%;
     width: 100%;
 }
 
-.navbar{
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #111827;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+#mobile-menu a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#mobile-menu a:hover {
+    color: #d1d5db;
+}
+
+#mobile-menu .close-btn {
+    font-size: 2rem;
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,23 +65,25 @@ html,body{
     padding: 0 5vw;
 }
 
-.navbar h2{
-    font-size: 2.5vw;
+.navbar h2 {
+    font-size: 2.2vw;
     font-weight: 900;
 }
 
-.navbar-part{
+.navbar-links {
     display: flex;
     gap: 2vw;
     align-items: center;
 }
-.navbar-part a{
+
+.navbar-links a {
     color: black;
-    font-size: 1.5vw;
-    font-weight: 800;
+    font-size: 1.7vw;
+    font-weight: 700;
     text-decoration: none;
 }
-.navbar-part button{
+
+.signin-btn {
     background-color: #8370ed;
     padding: 0.8vw 1.5vw;
     border: none;
@@ -53,31 +91,38 @@ html,body{
     font-size: 1vw;
     font-weight: 600;
 }
-.navbar-part i{
+
+.ri-menu-line {
     display: none;
 }
-.main-section{
+
+.main-section {
     height: calc(100% - 70px);
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.intro{
+
+.intro {
     height: 100%;
     width: 50%;
     padding: 10vw 5vw;
 }
-.intro h2{
+
+.intro h2 {
     font-size: 5.5vw;
 }
-.intro button{
+
+.intro button {
     background-color: #8370ed;
 }
-.intro h2 #Web{
+
+.intro h2 #Web {
     color: #8370ed;
 }
-.contact-btn{
+
+.contact-btn {
     background-color: #8370ed;
     padding: 1vw 3vw;
     border: none;
@@ -86,100 +131,117 @@ html,body{
     font-size: 1.1vw;
     font-weight: 600;
 }
-.icon{
+
+.icon {
     font-size: 4vw;
 }
-.logo{
+
+.logo {
     height: 100%;
     width: 50%;
 }
-.logo img{
+
+.logo img {
     width: 90%;
     height: 100%;
 }
-.main-about{
+
+.main-about {
     height: 100%;
     width: 100%;
 }
-.about{
+
+.about {
     height: calc(100% - 60px);
     width: 100%;
     display: flex;
     align-items: center;
     padding: 6vw 5vw;
 }
-.about-img{
+
+.about-img {
     width: 40%;
     height: 100%;
 }
-.about-img img{
-    width:  80%;
+
+.about-img img {
+    width: 80%;
     height: 100%;
     border-radius: 100%;
 }
-.about-intro{
+
+.about-intro {
     width: 50%;
     height: 100%;
-    /* background-color: antiquewhite; */
 }
-.about-intro button{
+
+.about-intro button {
     padding: 1vw 2vw;
     border: none;
     background-color: #FA6400;
     border-radius: 1vw;
     font-size: 1.2vw;
-    color: white;                                              
+    color: white;
 }
 
-.about-heading{
+.about-heading {
     color: #8370ed;
-    font-size: 2.7vw;
+    font-size: 3vw;
     font-weight: bolder;
-    margin-bottom: 0.7vw;
+    margin-bottom: 1vw;
 }
-.content{
+
+.content {
     font-size: 2vw;
     font-weight: 400;
-    font-style: oblique;
+    font-family: sans-serif;
     margin-bottom: 0.8vw;
 }
-#about-fav-heading{
+
+#about-fav-heading {
+    color: #8370ed;
     font-size: 2.7vw;
     font-weight: bold;
     margin-bottom: 0.8vw;
 }
-.tech-posts{
+
+.tech-posts {
     font-style: oblique;
-    font-weight: bold;
+    /* font-weight: ; */
     font-size: 2vw;
     margin-bottom: 1vw;
 }
-.tech-post{
+
+.tech-post {
     display: inline-block;
     padding: 0.5vw 1vw;
-    background-color: #8370ed;
-    /* border: 1px solid black; */
+    background-color: #fff;
     margin-bottom: 1vw;
     border-radius: 1vw;
 }
-.techstack{
+
+.techstack {
     height: 100%;
     width: 100%;
 }
-.techstack-container h2{
+
+.techstack-container h2 {
     margin-top: 1vw;
 }
-.techstack-container{
+
+.techstack-container {
     width: 100%;
     height: calc(100% - 60px);
     padding: 0 5vw;
 }
-.tech-head{
+
+.tech-head {
     margin-top: 1.5vw;
     text-align: center;
     color: #8370ed;
     font-size: 4vw;
 }
+
 .grid-container {
     width: 100%;
     display: grid;
@@ -190,7 +252,7 @@ html,body{
 /* Individual Tech Card */
 .tech-card {
     background: white;
-    padding:  0 0.5vw;
+    padding: 0 0.5vw;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -207,35 +269,39 @@ html,body{
 .tech-card h3 {
     font-size: 1.5vw;
 }
-.Contact{
+
+.Contact {
     width: 100%;
     height: 100%;
 }
-.Contact-form{
-    /* background-color: #e0dddd; */
+
+.Contact-form {
+    /* background-color: #f2ebeb; */
     width: 100%;
     height: calc(100% - 60px);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1vw;
-    padding: 7vw 25vw ;
+    padding: 4vw 10vw;
 }
-.Contact-form h1{
+
+.Contact-form h1 {
     font-size: 4vw;
     color: #8370ed;
 }
-.Contact-form form{
+
+.Contact-form form {
     width: 50%;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
     gap: 1.8vw;
-    padding: 3vw;
+    padding: 4vw 3vw;
     border-radius: 1vw;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
-.Contact-form input,textarea{
+
+.Contact-form input {
     background-color: #d3d3d3;
     border-radius: 1vw;
     font-size: 1vw;
@@ -244,8 +310,19 @@ html,body{
     border: none;
     outline: none;
 }
-.send-btn{
-    margin-top: 1vw;
+
+.Contact-form textarea {
+    background-color: #d3d3d3;
+    font-size: 1vw;
+    font-weight: 400;
+    padding: 1vw 2vw;
+    border: none;
+    outline: none;
+    opacity: 3;
+}
+
+.send-btn {
+    margin-top: 2vw;
     border: none;
     outline: none;
     background-color: #d3d3d3;
@@ -253,78 +330,79 @@ html,body{
     padding: 0.8vw;
     border-radius: 8px;
 }
-button:active{
-    background-color: rgba(33, 52, 198, 0.694);
-}
-footer{
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+
+button:active {
+    background-color: rgba(33, 52, 198, 0.9);
 }
 
 
 
-
-
-
-@media (max-width:600px) {
-    .navbar{
-        padding: 0 5.5vw;
-        height:50px;
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
     }
-    .navbar h2{
+
+    .navbar {
+        padding: 0 5.5vw;
+        height: 50px;
+    }
+
+    .navbar h2 {
         font-size: 5vw;
         font-weight: 900;
     }
-    .navbar-part a{
-        font-size: 2.5vw;
-        font-weight: 800;
-        display: none;
+
+    .signin-btn {
+        background-color: #8370ed;
+        padding: 2vw 4vw;
+        border: none;
+        border-radius: 5px;
+        font-size: 2.8vw;
+        font-weight: 600;
     }
-    .navbar-part button{
-    background-color: #8370ed;
-    padding: 2vw 4vw;
-    border: none;
-    border-radius: 5px;
-    font-size: 2.8vw;
-    font-weight: 600;
-    }
-    .navbar-part i{
+
+    .ri-menu-line {
         display: block;
         font-size: 6vw;
         font-weight: 900;
     }
-    .main-section{
+
+    .main-section {
         flex-direction: column;
-        /* flex-wrap: wrap; */
         height: calc(100% - 50px);
-        /* width: 100%; */
     }
-    .intro{
-        width: 100%;
-        height: 55%;
-    }
-    .logo{
+
+    .intro {
         width: 100%;
         height: 45%;
+        padding: 10vw 5vw 0vw 5vw;
+    }
+
+    .logo {
+        width: 100%;
+        height: 55%;
         margin-left: 9%;
     }
-    .intro h2{
+
+    .logo img {
+        padding-bottom: 12vw;
+    }
+
+    .intro h2 {
         font-size: 12vw;
     }
-    .contact-btn{
+
+    .contact-btn {
         font-size: 6vw;
         font-weight: 400;
         margin: 4vw 0;
     }
-    .icon{
+
+    .icon {
         font-size: 8vw;
     }
-    .about{
+
+    .about {
         flex-direction: column;
         gap: 3vw;
         height: calc(100% - 50px);
@@ -332,94 +410,121 @@ footer{
         padding: 2vw 10vw;
     }
 
-    .about-img{
+    .about-img {
         width: 100%;
         height: 40%;
     }
-    .about-img img{
+
+    .about-img img {
         margin-left: 6vw;
         margin-top: 1vw;
     }
-    .about-intro{
+
+    .about-intro {
         width: 100%;
         height: 60%;
     }
-    .about-heading{
+
+    .about-heading {
         font-size: 8vw;
         text-align: center;
     }
-    .content{
+
+    .content {
         font-size: 5vw;
     }
-    #about-fav-heading{
+
+    #about-fav-heading {
         font-size: 8vw;
     }
-    .tech-posts{
+
+    .tech-posts {
         font-size: 6vw;
         margin-bottom: 1vw;
     }
-    .about-intro button{
-    padding: 2vw 4vw;
-   font-size: 5vw;  
-   margin-top: 2vw;
-   border-radius: 1vw;                                           
+
+    .about-intro button {
+        padding: 2vw 4vw;
+        font-size: 5vw;
+        margin-top: 2vw;
+        border-radius: 1vw;
     }
-    .Contact{
+
+    .Contact {
         height: calc(100% - 60px);
         width: 100%;
     }
-    .Contact-form{
+
+    .Contact-form {
         height: 100%;
         justify-content: center;
         padding: 5vw 13vw;
     }
-    .Contact-form form{
+
+    .Contact-form form {
         gap: 5vw;
         height: 60%;
         width: 100%;
         padding: 9vw 5vw;
         border-radius: 3vw;
     }
-    .Contact-form h1{
+
+    .Contact-form h1 {
         font-size: 12vw;
     }
-    .Contact-form form input,textarea{
-        padding: 3vw 3vw;
+
+    .Contact-form form input,
+    textarea {
+        padding: 3vw;
         margin-top: 3vw;
         font-size: 5vw;
         border-radius: 4vw;
     }
-    .send-btn{
+
+    .Contact-form form textarea {
+        padding: 5vw;
+        margin-top: 3vw;
+        font-size: 5vw;
+    }
+
+    .send-btn {
         display: inline-block;
         padding: 2vw 2vw;
         font-size: 5vw;
         border-radius: 3vw;
     }
-    .techstack-container{
+
+    .techstack-container {
         height: calc(100% - 50px);
         width: 100%;
-        padding:2vw 5vw ;
+        padding: 2vw 5vw;
     }
-    .tech-head{
+
+    .tech-head {
         font-size: 9vw;
         font-family: sans-serif;
     }
-    .grid-container{
+
+    .grid-container {
         /* height: 100%; */
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15vw,25vw));
+        grid-template-columns: repeat(auto-fit, minmax(15vw, 25vw));
         gap: 5vw;
         padding: 2vw 0;
     }
-    .tech-card{
+
+    .tech-card {
         text-align: center;
     }
-    .tech-card h3{
+
+    .tech-card h3 {
         font-size: 5vw;
         text-align: center;
     }
-    .tech-card img{
+
+    .tech-card img {
         width: 11vw;
     }
+
 }

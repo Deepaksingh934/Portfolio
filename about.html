@@ -13,17 +13,24 @@
   </head>
   <body>
     <div class="main-about">
-      <nav class="navbar">
-        <h2>PORTFOLIO</h2>
-        <div class="navbar-part">
-          <div><a href="index.html">Home</a></div>
-          <div><a href="techstack.html">TechStack</a></div>
-          <div><a href="about.html">About</a></div>
-          <div><a href="contact.html">Contact</a></div>
-          <button class="signin-btn">Sign in</button>
-          <i class="ri-menu-line"></i>
-        </div>
-      </nav>
+          <nav class="navbar">
+      <h2>PORTFOLIO</h2>
+      <div class="navbar-links">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="techstack.html">TechStack</a></div>
+        <div><a href="about.html">About</a></div>
+        <div><a href="contact.html">Contact</a></div>
+        <button class="signin-btn">Sign in</button>
+      </div>
+      <i class="ri-menu-line" id="menu-btn"></i>
+    </nav>
+    <div id="mobile-menu">
+      <button class="close-btn" id="close-btn">&times;</button>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="techstack.html">TechStack</a>
+      <a href="contact.html">Contact</a>
+    </div>
       <div class="about">
         <div class="about-img">
           <img src="src/my-image.jpg" alt="User-image"  />
@@ -48,5 +55,6 @@
         </div>
       </div>
     </div>
+  <script src="logic.js"></script>
   </body>
 </html>
